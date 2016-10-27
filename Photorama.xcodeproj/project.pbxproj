@@ -51,6 +51,7 @@
 		CA5A74CD1DC2844C00B98C82 /* PhotoramaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoramaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5A74D11DC2844C00B98C82 /* PhotoramaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoramaUITests.m; sourceTree = "<group>"; };
 		CA5A74D31DC2844C00B98C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5A74DF1DC284AB00B98C82 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		CA5A74A01DC2844C00B98C82 = {
 			isa = PBXGroup;
 			children = (
+				CA5A74DF1DC284AB00B98C82 /* .gitignore */,
 				CA5A74AB1DC2844C00B98C82 /* Photorama */,
 				CA5A74C51DC2844C00B98C82 /* PhotoramaTests */,
 				CA5A74D01DC2844C00B98C82 /* PhotoramaUITests */,
