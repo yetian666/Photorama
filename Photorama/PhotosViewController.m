@@ -7,10 +7,12 @@
 //
 
 #import "PhotosViewController.h"
+#import "PhotoDataSource.h"
 
 @interface PhotosViewController ()
 
-@property (nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (nonatomic) PhotoDataSource *photoDataSource;
 
 @end
 
@@ -18,6 +20,9 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  
+  _photoDataSource = [PhotoDataSource new];
+  _collectionView.dataSource = _photoDataSource;
   
   [_photoStore fetchInterestingPhotosWithCompletion: ^(NSArray *photos) {
     NSLog(@"Found %lu photos", (unsigned long) photos.count);
@@ -29,7 +34,8 @@
     
     [_photoStore fetchImageForPhoto: photos.firstObject completion: ^(UIImage *image) {
       [[NSOperationQueue mainQueue] addOperationWithBlock: ^ {
-        _imageView.image = image;
+        _photoDataSource.photos = photos;
+        [_collectionView reloadSections:[NSIndexSet indexSetWithIndex:0]];
       }];
     }];
   }];
