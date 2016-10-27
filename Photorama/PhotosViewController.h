@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface PhotosViewController : UIViewController
 
+@property (nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 

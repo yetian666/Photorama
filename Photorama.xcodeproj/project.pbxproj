@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CA5A74AE1DC2844C00B98C82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5A74AD1DC2844C00B98C82 /* main.m */; };
 		CA5A74B11DC2844C00B98C82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5A74B01DC2844C00B98C82 /* AppDelegate.m */; };
-		CA5A74B41DC2844C00B98C82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5A74B31DC2844C00B98C82 /* ViewController.m */; };
+		CA5A74B41DC2844C00B98C82 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5A74B31DC2844C00B98C82 /* PhotosViewController.m */; };
 		CA5A74B71DC2844C00B98C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5A74B51DC2844C00B98C82 /* Main.storyboard */; };
 		CA5A74B91DC2844C00B98C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5A74B81DC2844C00B98C82 /* Assets.xcassets */; };
 		CA5A74BC1DC2844C00B98C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5A74BA1DC2844C00B98C82 /* LaunchScreen.storyboard */; };
@@ -39,8 +39,8 @@
 		CA5A74AD1DC2844C00B98C82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CA5A74AF1DC2844C00B98C82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA5A74B01DC2844C00B98C82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CA5A74B21DC2844C00B98C82 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CA5A74B31DC2844C00B98C82 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CA5A74B21DC2844C00B98C82 /* PhotosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		CA5A74B31DC2844C00B98C82 /* PhotosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
 		CA5A74B61DC2844C00B98C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA5A74B81DC2844C00B98C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA5A74BB1DC2844C00B98C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,8 +105,8 @@
 			children = (
 				CA5A74AF1DC2844C00B98C82 /* AppDelegate.h */,
 				CA5A74B01DC2844C00B98C82 /* AppDelegate.m */,
-				CA5A74B21DC2844C00B98C82 /* ViewController.h */,
-				CA5A74B31DC2844C00B98C82 /* ViewController.m */,
+				CA5A74B21DC2844C00B98C82 /* PhotosViewController.h */,
+				CA5A74B31DC2844C00B98C82 /* PhotosViewController.m */,
 				CA5A74B51DC2844C00B98C82 /* Main.storyboard */,
 				CA5A74B81DC2844C00B98C82 /* Assets.xcassets */,
 				CA5A74BA1DC2844C00B98C82 /* LaunchScreen.storyboard */,
@@ -275,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA5A74B41DC2844C00B98C82 /* ViewController.m in Sources */,
+				CA5A74B41DC2844C00B98C82 /* PhotosViewController.m in Sources */,
 				CA5A74B11DC2844C00B98C82 /* AppDelegate.m in Sources */,
 				CA5A74AE1DC2844C00B98C82 /* main.m in Sources */,
 			);

@@ -6,13 +6,13 @@
 //  Copyright © 2016 Ye Tian. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PhotosViewController.h"
 
-@interface ViewController ()
+@interface PhotosViewController ()
 
 @end
 
-@implementation ViewController
+@implementation PhotosViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
