@@ -10,13 +10,16 @@
 
 @interface PhotosViewController ()
 
+@property (nonatomic) IBOutlet UIImageView *imageView;
+
 @end
 
 @implementation PhotosViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+  
+  [_photoStore fetchInterestingPhotos];
 }
 
 
