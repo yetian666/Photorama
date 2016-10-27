@@ -21,6 +21,17 @@
   
   [_photoStore fetchInterestingPhotosWithCompletion: ^(NSArray *photos) {
     NSLog(@"Found %lu photos", (unsigned long) photos.count);
+    
+    if (photos.count == 0) {
+      NSLog(@"Zero photos! How SAD!");
+      return;
+    }
+    
+    [_photoStore fetchImageForPhoto: photos.firstObject completion: ^(UIImage *image) {
+      [[NSOperationQueue mainQueue] addOperationWithBlock: ^ {
+        _imageView.image = image;
+      }];
+    }];
   }];
 }
 

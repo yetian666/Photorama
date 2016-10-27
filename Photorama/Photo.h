@@ -6,7 +6,7 @@
 //  Copyright © 2016 Ye Tian. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Photo : NSObject
 
@@ -14,6 +14,7 @@
 @property(readonly, nonatomic) NSURL *remoteURL;
 @property(readonly, copy, nonatomic) NSString *photoID;
 @property(readonly, nonatomic) NSDate *dateTaken;
+@property(nonatomic) UIImage *image;
 
 - (instancetype)initWithTitle:(NSString *)title
                       photoID:(NSString *)photoID

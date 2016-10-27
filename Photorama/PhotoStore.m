@@ -8,6 +8,7 @@
 
 #import "PhotoStore.h"
 #import "FlickrAPI.h"
+#import "Photo.h"
 
 @interface PhotoStore ()
 
@@ -34,7 +35,6 @@
                                            completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                              if (data == nil) NSLog(@"Failed to fetch data. Error: %@", error);
                                              else {
-                                               NSError *parseError = nil;
                                                NSArray *photos = [self processInterestingPhotosRequestWithData:data error:error];
                                                if (photos) NSLog(@"Data returned by Flickr parsed");
                                                else NSLog(@"Error parsing JSON data: %@", error);
@@ -46,8 +46,29 @@
   [task resume];
 }
 
+- (void) fetchImageForPhoto: (Photo *) photo completion: (void(^)(UIImage *)) completion {
+  NSParameterAssert(photo);
+  NSParameterAssert(completion);
+  
+  NSURLRequest *request = [NSURLRequest requestWithURL: photo.remoteURL];
+  NSURLSessionDataTask *task = [_session dataTaskWithRequest: request
+                                           completionHandler: ^(NSData *data, NSURLResponse *response, NSError *error) {
+                                             UIImage *image = [self processImageRequestWithData:data error:error];
+                                             if (image) photo.image = image;
+                                             completion(image);
+                                           }];
+  
+  [task resume];
+}
+
 - (NSArray *) processInterestingPhotosRequestWithData: (NSData *) data error: (NSError *) error {
   if (data) return [FlickrAPI photosFromJSONData:data];
   else return nil;
 }
+
+- (UIImage *) processImageRequestWithData: (NSData *) data error: (NSError *) error {
+  if (data == nil) return nil;
+  return [UIImage imageWithData:data];
+}
+
 @end
