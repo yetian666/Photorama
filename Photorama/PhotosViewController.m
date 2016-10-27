@@ -19,7 +19,9 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  [_photoStore fetchInterestingPhotos];
+  [_photoStore fetchInterestingPhotosWithCompletion: ^(NSArray *photos) {
+    NSLog(@"Found %lu photos", (unsigned long) photos.count);
+  }];
 }
 
 

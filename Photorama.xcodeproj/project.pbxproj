@@ -17,6 +17,7 @@
 		CA5A74D21DC2844C00B98C82 /* PhotoramaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5A74D11DC2844C00B98C82 /* PhotoramaUITests.m */; };
 		CA5A74E21DC29B9D00B98C82 /* FlickrAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5A74E11DC29B9D00B98C82 /* FlickrAPI.m */; };
 		CA5A74E51DC2A28800B98C82 /* PhotoStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5A74E41DC2A28800B98C82 /* PhotoStore.m */; };
+		CA5A74E81DC2A86200B98C82 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5A74E71DC2A86200B98C82 /* Photo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		CA5A74E11DC29B9D00B98C82 /* FlickrAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrAPI.m; sourceTree = "<group>"; };
 		CA5A74E31DC2A28700B98C82 /* PhotoStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoStore.h; sourceTree = "<group>"; };
 		CA5A74E41DC2A28800B98C82 /* PhotoStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoStore.m; sourceTree = "<group>"; };
+		CA5A74E61DC2A86200B98C82 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		CA5A74E71DC2A86200B98C82 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				CA5A74B01DC2844C00B98C82 /* AppDelegate.m */,
 				CA5A74B21DC2844C00B98C82 /* PhotosViewController.h */,
 				CA5A74B31DC2844C00B98C82 /* PhotosViewController.m */,
+				CA5A74E61DC2A86200B98C82 /* Photo.h */,
+				CA5A74E71DC2A86200B98C82 /* Photo.m */,
 				CA5A74B51DC2844C00B98C82 /* Main.storyboard */,
 				CA5A74B81DC2844C00B98C82 /* Assets.xcassets */,
 				CA5A74BA1DC2844C00B98C82 /* LaunchScreen.storyboard */,
@@ -285,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5A74E81DC2A86200B98C82 /* Photo.m in Sources */,
 				CA5A74B41DC2844C00B98C82 /* PhotosViewController.m in Sources */,
 				CA5A74B11DC2844C00B98C82 /* AppDelegate.m in Sources */,
 				CA5A74AE1DC2844C00B98C82 /* main.m in Sources */,

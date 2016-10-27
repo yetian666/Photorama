@@ -26,19 +26,28 @@
   return self;
 }
 
-- (void)fetchInterestingPhotos {
+- (void)fetchInterestingPhotosWithCompletion: (void(^)(NSArray *)) completion {
+  NSParameterAssert(completion);
   NSURL *url = [FlickrAPI interestingPhotosURL];
   NSURLRequest *request = [NSURLRequest requestWithURL:url];
   NSURLSessionDataTask *task = [_session dataTaskWithRequest:request
                                            completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                              if (data == nil) NSLog(@"Failed to fetch data. Error: %@", error);
                                              else {
-                                               NSString *jsonString = [[NSString alloc] initWithData:data
-                                                                                            encoding:NSUTF8StringEncoding];
-                                               NSLog(@"%@", jsonString);
+                                               NSError *parseError = nil;
+                                               NSArray *photos = [self processInterestingPhotosRequestWithData:data error:error];
+                                               if (photos) NSLog(@"Data returned by Flickr parsed");
+                                               else NSLog(@"Error parsing JSON data: %@", error);
+                                               
+                                               completion(photos);
                                              }
                                            }];
   
   [task resume];
+}
+
+- (NSArray *) processInterestingPhotosRequestWithData: (NSData *) data error: (NSError *) error {
+  if (data) return [FlickrAPI photosFromJSONData:data];
+  else return nil;
 }
 @end

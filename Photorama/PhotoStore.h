@@ -10,6 +10,6 @@
 
 @interface PhotoStore : NSObject
 
-- (void)fetchInterestingPhotos;
+- (void)fetchInterestingPhotosWithCompletion: (void(^)(NSArray *)) completion;
 
 @end
