@@ -19,6 +19,8 @@
 		CA5A74E51DC2A28800B98C82 /* PhotoStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5A74E41DC2A28800B98C82 /* PhotoStore.m */; };
 		CA5A74E81DC2A86200B98C82 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5A74E71DC2A86200B98C82 /* Photo.m */; };
 		CA5A74EB1DC2C55700B98C82 /* PhotoDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5A74EA1DC2C55700B98C82 /* PhotoDataSource.m */; };
+		CA5A74EE1DC2C95000B98C82 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5A74ED1DC2C95000B98C82 /* PhotoCollectionViewCell.m */; };
+		CA5A74F11DC3C09B00B98C82 /* PhotoInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5A74F01DC3C09B00B98C82 /* PhotoInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,10 @@
 		CA5A74E71DC2A86200B98C82 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		CA5A74E91DC2C55700B98C82 /* PhotoDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDataSource.h; sourceTree = "<group>"; };
 		CA5A74EA1DC2C55700B98C82 /* PhotoDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDataSource.m; sourceTree = "<group>"; };
+		CA5A74EC1DC2C95000B98C82 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		CA5A74ED1DC2C95000B98C82 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		CA5A74EF1DC3C09A00B98C82 /* PhotoInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoInfoViewController.h; sourceTree = "<group>"; };
+		CA5A74F01DC3C09B00B98C82 /* PhotoInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,8 @@
 				CA5A74E61DC2A86200B98C82 /* Photo.h */,
 				CA5A74E71DC2A86200B98C82 /* Photo.m */,
 				CA5A74B51DC2844C00B98C82 /* Main.storyboard */,
+				CA5A74EC1DC2C95000B98C82 /* PhotoCollectionViewCell.h */,
+				CA5A74ED1DC2C95000B98C82 /* PhotoCollectionViewCell.m */,
 				CA5A74E91DC2C55700B98C82 /* PhotoDataSource.h */,
 				CA5A74EA1DC2C55700B98C82 /* PhotoDataSource.m */,
 				CA5A74B81DC2844C00B98C82 /* Assets.xcassets */,
@@ -132,6 +140,8 @@
 				CA5A74E11DC29B9D00B98C82 /* FlickrAPI.m */,
 				CA5A74E31DC2A28700B98C82 /* PhotoStore.h */,
 				CA5A74E41DC2A28800B98C82 /* PhotoStore.m */,
+				CA5A74EF1DC3C09A00B98C82 /* PhotoInfoViewController.h */,
+				CA5A74F01DC3C09B00B98C82 /* PhotoInfoViewController.m */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -300,8 +310,10 @@
 				CA5A74B11DC2844C00B98C82 /* AppDelegate.m in Sources */,
 				CA5A74AE1DC2844C00B98C82 /* main.m in Sources */,
 				CA5A74E51DC2A28800B98C82 /* PhotoStore.m in Sources */,
+				CA5A74EE1DC2C95000B98C82 /* PhotoCollectionViewCell.m in Sources */,
 				CA5A74EB1DC2C55700B98C82 /* PhotoDataSource.m in Sources */,
 				CA5A74E21DC29B9D00B98C82 /* FlickrAPI.m in Sources */,
+				CA5A74F11DC3C09B00B98C82 /* PhotoInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

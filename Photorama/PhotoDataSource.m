@@ -7,6 +7,8 @@
 //
 
 #import "PhotoDataSource.h"
+#import "PhotoCollectionViewCell.h"
+#import "Photo.h"
 
 @implementation PhotoDataSource
 
@@ -15,8 +17,10 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-  UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: @"UICollectionViewCell" forIndexPath: indexPath];
+  PhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: @"UICollectionViewCell" forIndexPath: indexPath];
   
+  Photo *photo = _photos[indexPath.row];
+  [cell updateWithImage: photo.image];
   return cell;
 }
 

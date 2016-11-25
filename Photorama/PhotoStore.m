@@ -50,6 +50,11 @@
   NSParameterAssert(photo);
   NSParameterAssert(completion);
   
+  if (photo.image != nil) {
+    completion(photo.image);
+    return;
+  }
+  
   NSURLRequest *request = [NSURLRequest requestWithURL: photo.remoteURL];
   NSURLSessionDataTask *task = [_session dataTaskWithRequest: request
                                            completionHandler: ^(NSData *data, NSURLResponse *response, NSError *error) {
